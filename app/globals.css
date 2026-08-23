@@ -70,6 +70,33 @@ main {
   text-align: center;
 }
 
+/* ---------- music toggle ---------- */
+
+.music-toggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 5px 0 rgba(43, 18, 10, 0.28);
+  transition: transform 0.15s ease;
+}
+
+.music-toggle:hover {
+  transform: translateY(-2px) rotate(-4deg);
+}
+
+.music-toggle:active {
+  transform: translateY(0) rotate(0deg);
+}
+
 /* ---------- avatar / sticker ---------- */
 
 .avatar-wrap {

@@ -1,3 +1,5 @@
+import MusicToggle from "./components/MusicToggle";
+
 const RAY_COUNT = 16;
 
 function Sunburst() {
@@ -35,6 +37,8 @@ const bio =
 export default function Home() {
   return (
     <main>
+      <MusicToggle />
+
       <div className="avatar-wrap">
         <Sunburst />
         <div className="sticker">
