@@ -59,7 +59,6 @@ export default function Home() {
         rel="noopener noreferrer"
       >
         Xu-Mi-Li-Xi: Escute AGORA!!
-        <span className="tag">♫</span>
       </a>
 
       <p className="coming-soon">
