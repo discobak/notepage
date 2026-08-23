@@ -52,6 +52,16 @@ export default function Home() {
 
       <p className="title-slot">{bio}</p>
 
+      <a
+        className="link-slot"
+        href="https://open.spotify.com/track/52k2v3bFkO3kAN02vZZgJO?si=2db225dafca74da8"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Xu-Mi-Li-Xi: Escute AGORA!!
+        <span className="tag">♫</span>
+      </a>
+
       <p className="coming-soon">
         Em construção
         <br />
