@@ -29,12 +29,6 @@ function Sunburst() {
   );
 }
 
-const linkPlaceholders = [
-  { tag: "01", label: "link 1" },
-  { tag: "02", label: "link 2" },
-  { tag: "03", label: "link 3" },
-];
-
 const bio =
   "Oie! eu sou o note, eu tô criando essa pagina interativa aqui para vocês se divertirem e saber mais sobre mim também. abaixo terá link, minijogos super legais e em breve muitas coisas!";
 
@@ -54,14 +48,13 @@ export default function Home() {
 
       <p className="title-slot">{bio}</p>
 
-      <nav className="links" aria-label="Links">
-        {linkPlaceholders.map((link) => (
-          <a key={link.tag} className="link-slot" href="#">
-            {link.label}
-            <span className="tag">{link.tag}</span>
-          </a>
-        ))}
-      </nav>
+      <p className="coming-soon">
+        Em construção
+        <br />
+        Em breve vai ter muitas coisas legais..
+        <br />
+        mal posso aguardar...
+      </p>
 
       <footer>note. — em construção</footer>
     </main>
