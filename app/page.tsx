@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MusicToggle from "./components/MusicToggle";
 
 const RAY_COUNT = 16;
@@ -52,6 +53,7 @@ export default function Home() {
 
       <p className="title-slot">{bio}</p>
 
+      <span className="category-label">Links</span>
       <a
         className="link-slot"
         href="https://open.spotify.com/track/52k2v3bFkO3kAN02vZZgJO?si=2db225dafca74da8"
@@ -60,6 +62,11 @@ export default function Home() {
       >
         Xu-Mi-Li-Xi: Escute AGORA!!
       </a>
+
+      <span className="category-label">Tools</span>
+      <Link href="/calculadora" className="link-slot">
+        🧮 Calculadora
+      </Link>
 
       <p className="coming-soon">
         Em construção
