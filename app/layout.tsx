@@ -1,46 +1,22 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope, Space_Mono } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: ["500", "600", "700", "900"],
-  style: ["normal", "italic"],
-  variable: "--font-display",
-  display: "swap",
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-body",
-  display: "swap",
-});
-
-const spaceMono = Space_Mono({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-mono",
-  display: "swap",
+  variable: "--font-bricolage",
+  axes: ["opsz", "wdth"],
 });
 
 export const metadata: Metadata = {
-  title: "note.",
-  description: "Página pessoal de Note (Noteboom Nonicon).",
+  title: "Discobak",
+  description: "Descubra o que podemos fazer.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
-      <body
-        className={`${fraunces.variable} ${manrope.variable} ${spaceMono.variable}`}
-      >
-        {children}
-      </body>
+    <html lang="pt-BR" className={bricolage.variable}>
+      <body>{children}</body>
     </html>
   );
 }
